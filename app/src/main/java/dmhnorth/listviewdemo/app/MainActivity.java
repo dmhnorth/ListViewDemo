@@ -21,11 +21,11 @@ public class MainActivity extends ActionBarActivity {
 
 
         //example list
-        String[] peopleList = {"Dave", "Olly", "Joe", "Ryan", "Mike", "Ludo"};
+        String[] peopleList = {"Dave", "Olly", "Joe", "Ryan", "Mike", "Ludo", "John", "Bean",
+                "Slime", "Bazzer", "Frump pop", "Dingo", "Congo Natty"};
 
-        //adapter used to create the list. Parameters are (context, layout.xml, dataSet)
-        ListAdapter listAdapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout, R.id.textView1,
-                peopleList);
+        //custom adapter used to create the list. Parameters are (context dataSet)
+        ListAdapter listAdapter = new MyAdapter(this, peopleList);
 
         //Find the ListView and use it
         ListView listView = (ListView) findViewById(R.id.theListView);
