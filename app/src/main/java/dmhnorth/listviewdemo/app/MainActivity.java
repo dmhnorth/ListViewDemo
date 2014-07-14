@@ -24,11 +24,11 @@ public class MainActivity extends ActionBarActivity {
         String[] peopleList = {"Dave", "Olly", "Joe", "Ryan", "Mike", "Ludo"};
 
         //adapter used to create the list. Parameters are (context, layout.xml, dataSet)
-        ListAdapter listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+        ListAdapter listAdapter = new ArrayAdapter<String>(this, R.layout.custom_row_layout, R.id.textView1,
                 peopleList);
 
         //Find the ListView and use it
-        ListView listView = (ListView) findViewById(R.id.peopleList);
+        ListView listView = (ListView) findViewById(R.id.theListView);
 
         //Set the ListView Adapter we want to use
         listView.setAdapter(listAdapter);
