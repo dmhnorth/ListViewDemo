@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
         String[] peopleList = {"Dave", "Olly", "Joe", "Ryan", "Mike", "Ludo", "John", "Bean",
                 "Slime", "Bazzer", "Frump pop", "Dingo", "Congo Natty"};
 
-        //custom adapter used to create the list. Parameters are (context, dataSet)
+        //custom ArrayAdapter used to create the list. Parameters are (context, dataSet)
         ListAdapter listAdapter = new MyAdapter(this, peopleList);
 
         //Find the ListView and use it
