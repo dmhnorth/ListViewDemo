@@ -19,7 +19,7 @@ public class MyAdapter extends ArrayAdapter<String> {
     }
 
 
-//    Must find this method and implement it using ctrl-o
+//    Must find this method and implement it using ctrl-o (Android Studio)
 //    the convertView parameter is for reusing an old view
 //    ViewGroup represents a group of containers
     @Override
@@ -28,6 +28,7 @@ public class MyAdapter extends ArrayAdapter<String> {
 //      Inflater is used to get the details of the view from the current context
         LayoutInflater theInflater = LayoutInflater.from(getContext());
 
+//      We must then find the individual component views within the designated xml
         View theView = theInflater.inflate(R.layout.custom_row_layout_2, parent, false);
 
         String person = getItem(position);
